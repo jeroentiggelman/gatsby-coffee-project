@@ -11,7 +11,7 @@ import PropTypes from "prop-types"
 import "./bootstrap.min.css"
 import "./layout.css"
 
-import { Navbar } from "./globals/Navbar"
+import { Navbar } from "./globals/navbar"
 import Footer from "./globals/Footer"
 
 const Layout = ({ children }) =>
