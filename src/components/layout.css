@@ -52,6 +52,6 @@ h6 {
 .about-background {
   min-height: 60vh;
 }
-.menu {
+.menu, .contact {
   background-color: var(--mainGrey);
 }
