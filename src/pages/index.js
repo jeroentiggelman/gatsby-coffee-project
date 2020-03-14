@@ -7,6 +7,7 @@ import SEO from "../components/seo"
 import BackgroundSection from "../components/globals/BackgroundSection"
 import Info from '../components/home/Info'
 import { Menu } from '../components/home/Menu'
+import Products  from '../components/home/Products'
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -18,9 +19,12 @@ const IndexPage = ({ data }) => (
     />
     <Info />
     <Menu items={data.menu} />
+    <Products />
   </Layout>
 )
 
+// GatsbyContentfulFixed_tracedSVG is broken in Netlify
+// see https://stackoverflow.com/questions/58974472/gatsby-contentful-netlify-how-to-render-tracedsvg-images-in-production
 export const query = graphql`
 {
   img: file(relativePath: {eq:
@@ -49,6 +53,7 @@ export const query = graphql`
       }
     }
   }
+
 }
 `
 
